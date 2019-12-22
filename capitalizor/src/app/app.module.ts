@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './modules/home/home.component';
 import { CategoryComponent } from './modules/category/category.component';
 import { ProfilComponent } from './modules/profil/profil.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { ProfilComponent } from './modules/profil/profil.component';
     ProfilComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
