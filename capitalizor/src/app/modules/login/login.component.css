@@ -1,10 +1,13 @@
 div.loginContainer{
     
-    background-color: #f5f6f8;
+    /*background-color: #f5f6f8;*/
     margin: auto;
-    margin-top: 10%;
+    margin-top: 8%;
     border-left: 0px;
     border-right: 0px;
+    margin-bottom: 1%;
+
+    border-bottom: 1px solid darkgrey;
 }
 
 input{

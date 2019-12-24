@@ -9,9 +9,8 @@
 
 </div>
 <div class="row">
-    <div class="loginContainer col-10 col-lg-4 col-sm-4 col-md-4 pb-2 ">
-
-        <h1> Login</h1>
+    <div class="loginContainer col-10 col-lg-4 col-sm-4 col-md-4 pb-5 border-bottom border-dark">
+        <h4 class="text-center pb-3"> To continue, log in to Capitalizor</h4>
         <h1> {{info}}</h1>
         <div class="form-group">
             <label for="email">Email address</label>
@@ -23,8 +22,21 @@
             <input type="password" class="form-control" id="pswd" [(ngModel)]="password" placeholder="Password">
 
         </div>
-        <div class="loginCenter">
-        <button type="submit" class="btn btn-primary w-50 rounded-pill mx-auto" (click)="sendToConnect()">Login</button>
-        <a href="#" class="text-center ">Forgot your password?</a></div>
+        <button type="submit" class="btn btn-success w-50 rounded-pill" (click)="sendToConnect()">Login</button>
+        <div class="form-check mb-2">
+            <input class="form-check-input" type="checkbox" id="autoSizingCheck">
+            <label class="form-check-label" for="autoSizingCheck">
+              Remember me
+            </label>
+        </div>
+        <a href="#" class="text-success text-decoration-none">Forgot your password?</a>
+
+    </div>
+   
+</div>
+<div class="row">
+    <div class="col-10 col-lg-4 col-sm-4 col-md-4 pb-2 mx-auto pt-3 border-bottom border-dark pb-5">
+        <h5 class="text-center pb-2" >Don't have an account?</h5>
+        <button type="button" class="btn btn-outline-dark btn-block rounded-pill" >SIGN UP FOR CAPITALAZOR</button>
     </div>
 </div>
