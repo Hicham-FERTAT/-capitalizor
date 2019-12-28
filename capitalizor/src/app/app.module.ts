@@ -7,6 +7,13 @@ import { HomeComponent } from './modules/home/home.component';
 import { CategoryComponent } from './modules/category/category.component';
 import { ProfilComponent } from './modules/profil/profil.component';
 import { FormsModule } from '@angular/forms';
+import { SignupComponent } from './modules/signup/signup.component';
+
+import { Routes, RouterModule } from '@angular/router'
+import { from } from 'rxjs';
+const routes : Routes = [
+  {path : 'signup', component : SignupComponent}
+]
 
 @NgModule({
   declarations: [
@@ -14,12 +21,15 @@ import { FormsModule } from '@angular/forms';
     LoginComponent,
     HomeComponent,
     CategoryComponent,
-    ProfilComponent
+    ProfilComponent,
+    SignupComponent
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    RouterModule.forRoot(routes)
   ],
+  exports:[RouterModule],
   providers: [],
   bootstrap: [AppComponent]
 })

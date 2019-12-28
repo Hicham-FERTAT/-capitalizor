@@ -1,0 +1,10 @@
+{
+    "login":{
+            },
+    "signup":{
+        "email": "email",
+        "password": "password",
+        "comfirmpss": "Confirm password"
+    }
+
+}

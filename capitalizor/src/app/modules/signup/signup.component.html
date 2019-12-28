@@ -1,0 +1,32 @@
+<div class="row">
+    <div class="w-50 col-10 col-lg-4 col-sm-4 col-md-4 mx-auto border-dark">
+        <h4 class="text-center pb-3"> To continue, log in to Capitalizor</h4>
+        <h1> {{info}}</h1>
+        <div class="form-group">
+            <label for="email">{{signup.email}}</label>
+            <input type="email" class="form-control rounded-0 h-5" id="email" [(ngModel)]="mail" placeholder="Email">
+
+        </div>
+        <div class="form-group">
+            <label for="pswd">Confirm email</label>
+            <input type="password" class="form-control rounded-0" id="email" [(ngModel)]="password" placeholder="Confirm email">
+
+        </div>
+        <div class="form-group">
+            <label for="pswd">Password</label>
+            <input type="password" class="form-control rounded-0" id="pswd" [(ngModel)]="password" placeholder="Password">
+        </div>
+        <div class="form-group">
+            <label for="pswd">What we shoud call you?</label>
+            <input type="password" class="form-control rounded-0" id="psudo" [(ngModel)]="psudoName" placeholder="What we shoud call you?">
+        </div>
+        <div class="form-group">
+            <label for="pswd">What we shoud call you?</label>
+            <input type="password" class="form-control rounded-0" id="psudo" [(ngModel)]="psudoName" placeholder="What we shoud call you?">
+        </div>
+
+        <button type="submit" class="btn btn-success w-50 rounded-pill" (click)="sendToSignUp()">Sign up</button>
+       
+    </div>
+   
+</div>
