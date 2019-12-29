@@ -11,15 +11,14 @@
 <div class="row">
     <div class="w-50 col-10 col-lg-4 col-sm-4 col-md-4 mx-auto border-dark mt-5">
         <h4 class="text-center pb-3"> Sign up to Capitalizor</h4>
-        <h1> {{info}}</h1>
         <div class="form-group">
-            <label for="email">{{signup.email}}</label>
-            <input type="email" class="form-control rounded-0 h-5" id="email" [(ngModel)]="mail" placeholder="Email">
+            <label for="email">Email</label>
+            <input type="email" class="form-control rounded-0 h-5" id="email" [(ngModel)]="email" placeholder="Email">
 
         </div>
         <div class="form-group">
             <label for="pswd">Confirm email</label>
-            <input type="password" class="form-control rounded-0" id="email" [(ngModel)]="password"
+            <input type="password" class="form-control rounded-0" id="email" [(ngModel)]="confirmEmail"
                 placeholder="Confirm email">
 
         </div>
@@ -37,7 +36,7 @@
             <label for="pswd">Day of birth</label>
             <div class="row mx-auto">
                 <input type="text" class="form-control rounded-0 col-lg-3 mr-5 mx-sm-auto" id="day"
-                    [(ngModel)]="psudoName" placeholder="Day">
+                    [(ngModel)]="day" placeholder="Day">
 
                 <select class="col-lg-3 mr-5 ml-2 mx-sm-auto">
                     <option selected>Month</option>

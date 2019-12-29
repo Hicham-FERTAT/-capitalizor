@@ -11,10 +11,14 @@ export class SignupComponent implements OnInit {
   confirmEmail: string = "";
   password : string ="";
   psudoName : string ="";
+  day : string ="";
+  year : string ="";
 
   constructor() { }
 
   ngOnInit() {
   }
-
+  sendToSignUp(){
+    
+  }
 }
